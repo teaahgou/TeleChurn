@@ -1,0 +1,391 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px; /* Adjust as needed */
+    width: auto;
+    margin-right: 20px; /* Add margin for separation */
+}
+
+.brand-name {
+    font-weight: bolder;
+    font-size: x-large;
+    color: #253b6e; /* Adjust color as needed */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align navigation to the right */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #253b6e; /* Change link color */
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: none;
+    color: #253b6e; /* Change text color on hover */
+    background-color: #f8f9fa; /* Add background color on hover */
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.hero {
+  background: url('image/hero-one.png') center/cover no-repeat; /* Replace with your image path */
+  position: relative;
+  background-size: cover; 
+  background-position: center;
+  height: 90vh;
+  color: #fff;
+}
+
+/* Add overlay to create transparency */
+&:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+}
+
+.btn-primary {
+  background-color: #253b6e;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 40px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;  
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center; 
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+/* About Section */
+#about {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #about h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  #about h2::after {
+    content: "";
+    height: 4px;
+    width: 60px;
+    background-color: #253b6e;
+    position: absolute;
+    left: 0;
+    bottom: -15px;  
+  }  
+  
+  #about p {
+    line-height: 1.6;
+    margin-bottom: 20px;  
+  } 
+
+  /* Add your custom styles here */
+
+/* Style for the image with shadow */
+.image-with-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  }
+  
+
+/* Key Features */
+#features {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+  }
+  
+  .feature-box {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    padding: 60px 30px;
+    border-radius: 5px;
+    margin: 15px 0;
+    background-color: #fff;  
+    overflow: hidden; 
+    position: relative;
+  }
+  
+  .feature-box i {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #253b6e;
+  }
+  
+  .feature-box h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  
+  /* Animation */
+  .feature-box:before {  
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: -50px;
+    background: #253b6e;
+    border-radius: 50%;
+    opacity: 0.5;  
+    transform: scale(0);
+    transition: all 0.5s ease;
+  }
+
+  .feature-box {
+    transition: transform 0.5s ease; 
+  }
+  
+  .feature-box:hover {
+    transform: scale(1.1); 
+  }
+  
+  @keyframes scale {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  .feature-box:hover {
+    animation: scale 0.5s forwards;
+  }
+
+  .feature-box:hover::before {
+    transform: scale(3);  
+  }
+
+  /* Shared Styles */
+.title {
+    margin-bottom: 30px;
+    position: relative;  
+  }
+  
+  .title:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;  
+    background: #253b6e;
+    margin-top: 10px;
+  }
+  
+  
+  /* Animations */
+  .how-wrap,
+  .viz-wrap, 
+  .testi-wrap {
+    transition: all 0.3s ease;
+  }
+  
+  .how-wrap:hover, 
+  .viz-wrap:hover,
+  .testi-wrap:hover {
+    transform: translateY(-8px);
+  }
+
+/* Minimalist Design for Visualizations Section */
+#visuals {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.title {
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.viz-wrap {
+    margin: 0 auto;
+    max-width: 800px; /* Set maximum width for the visualizations */
+}
+
+/* Style for Carousel Controls with transparent background */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8; /* Adjust opacity as needed */
+    background-color: rgba(0, 123, 255, 0); /* Transparent background */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 123, 255, 0); /* Transparent background */
+}
+
+/* Apply border radius to images */
+.carousel-item img {
+    border-radius: 10px; /* Adjust border radius as needed */
+}
+
+
+/* Add your custom styles here */
+
+/* Style for How It Works Section */
+#how {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 80px 0; /* Adjust padding as needed */
+}
+
+.title {
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.how-wrap {
+    margin: 0 auto;
+}
+
+/* Style for Video Container */
+.video-container {
+    border-radius: 10px; /* Adjust border radius as needed */
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow effect */
+}
+
+/* Responsive styling for the video */
+.embed-responsive-16by9 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (h/w) */
+    overflow: hidden;
+}
+
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* developers section*/
+.developers-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .developer-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .developer-card:hover {
+    transform: scale(1.05);
+  }
+
+  .developer-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .developer-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .developer-role {
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+
+/* Add your other styles here */
+
+    /* Example styles for the Contact Us page */
+    .contact-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+  
+      .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+  
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+  
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
